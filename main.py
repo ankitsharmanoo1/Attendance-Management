@@ -5,8 +5,7 @@ def main():
     action = input("Enter 'register' to register a new user or 'recognize' to start face recognition: ").strip().lower()
 
     if action == "register":
-        user_id = input("Enter your user ID: ").strip()
-        register_user(user_id)
+        register_user()  # No need to pass user_id here
     elif action == "recognize":
         recognize_face()
     else:
